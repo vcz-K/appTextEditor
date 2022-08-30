@@ -8,6 +8,7 @@
 
 import React, { useRef } from 'react';
 import {
+  Button,
   SafeAreaView,
   ScrollView,
   StatusBar,
@@ -21,8 +22,9 @@ import { actions, RichEditor, RichToolbar } from 'react-native-pell-rich-editor'
 const App = () => {
   const richText = useRef();
 
-  const onChange = (e) => {
-    console.log("입력!", e);
+  const onChange = (content) => {
+    console.log("content :");
+    console.log(content);
   }
 
   const HTML = `
